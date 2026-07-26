@@ -1,0 +1,339 @@
+
+body {
+
+    text-align:center;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #e8fff3,
+        #fff0f5
+    );
+
+    min-height:100vh;
+    padding-top:80px;
+
+}
+
+
+h1 {
+    font-size:60px;
+}
+
+
+h2 {
+    font-size:35px;
+}
+
+
+img {
+
+    width:300px;
+    border-radius:20px;
+
+}
+
+
+.hidden {
+
+    display:none;
+
+}
+
+
+.biology-background {
+
+    position:fixed;
+    top:20px;
+    width:100%;
+    font-size:40px;
+    opacity:0.3;
+
+}
+
+video {
+    width:300px;
+    border-radius:20px;
+}
+
+
+
+body {
+
+    font-family: "Quicksand", sans-serif;
+
+    text-align: center;
+
+    min-height: 100vh;
+
+    margin: 0;
+
+    padding-top: 80px;
+
+    overflow-x: hidden;
+
+
+    background:
+        radial-gradient(circle at top left, #e8fff3, transparent),
+        radial-gradient(circle at bottom right, #ffe6f0, transparent),
+        #fffaf5;
+
+}
+
+
+/* Main emotional messages */
+
+h1 {
+
+    font-family: "Caveat", cursive;
+
+    font-size: 80px;
+
+    color: #d14d72;
+
+}
+
+
+h2 {
+
+    font-size: 35px;
+
+    color: #6b4f4f;
+
+}
+
+
+/* Floating biology emojis */
+
+.biology-background {
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: -1;
+
+    overflow: hidden;
+
+}
+
+
+.biology-background span {
+
+    position: absolute;
+
+    font-size:140px;
+
+    opacity: 0.65;
+
+    animation: floatAround 15s infinite ease-in-out;
+
+}
+
+
+/* Make them move differently */
+
+.biology-background span:nth-child(1) {
+    animation-duration: 12s;
+}
+
+.biology-background span:nth-child(2) {
+    animation-duration: 18s;
+}
+
+.biology-background span:nth-child(3) {
+    animation-duration: 14s;
+}
+
+.biology-background span:nth-child(4) {
+    animation-duration: 20s;
+}
+
+.biology-background span:nth-child(5) {
+    animation-duration: 16s;
+}
+
+
+
+@keyframes floatAround {
+
+    0% {
+        transform: translate(0, 100vh) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(80px, 60vh) rotate(90deg);
+    }
+
+    50% {
+        transform: translate(-60px, 30vh) rotate(180deg);
+    }
+
+    75% {
+        transform: translate(100px, 10vh) rotate(270deg);
+    }
+
+    100% {
+        transform: translate(0, -20vh) rotate(360deg);
+    }
+
+}
+
+
+/* Hidden scenes */
+
+.hidden {
+
+    display:none;
+
+}
+
+
+/* Fade-in movie effect */
+
+section {
+
+    animation: fadeIn 2s ease;
+
+}
+
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity:0;
+
+        transform: translateY(30px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+img, video {
+
+    width:300px;
+
+    border-radius:25px;
+
+    margin-top:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+
+}
+
+#movie {
+
+    height:100vh;
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+.scene {
+
+    position:absolute;
+
+    width:90%;
+    max-width:700px;
+
+    opacity:1;
+
+    transition:
+        opacity 1.5s ease,
+        transform 1.5s ease;
+
+}
+
+
+.hidden {
+
+    opacity:0;
+
+    transform:scale(0.95);
+
+    pointer-events:none;
+
+}
+
+/* General text */
+
+body {
+
+    font-family: "Crafty Girls", cursive;
+
+    color: black;
+
+}
+
+
+/* Main emotional titles only */
+
+#scene1 h1,
+#scene5 h1 {
+
+    font-family: "DynaPuff", cursive;
+
+    color: #FA5053; /* strawberry red */
+
+    font-size: 80px;
+
+}
+
+
+/* All other headings */
+
+h2 {
+
+    font-family: "Crafty Girls", cursive;
+
+    color: black;
+
+    font-size: 45px;
+
+}
+
+
+/* Paragraphs */
+
+p {
+
+    font-family: "Crafty Girls", cursive;
+
+    color: black;
+
+    font-size: 28px;
+
+}
+
+
+/* Images and videos */
+
+img, video {
+
+    width: 300px;
+
+    border-radius: 25px;
+
+    margin-top: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+}
